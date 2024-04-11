@@ -30,12 +30,12 @@
     font-weight: 100;
     font-style: normal;  
     font-size: 20px;
-    margin: 0px 15px;
     margin-top: auto;
     margin-bottom: auto;
     list-style-type: none;
     padding: 0px 30px;
-    color: #e63f10;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     img {
