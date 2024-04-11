@@ -2,10 +2,10 @@ import React from 'react';
 import Logo from "../styles/assets/villageLogo.png"
 import { NavLink, Link } from 'react-router-dom';
 
-import '../styles/UserPage.css';
+import '../styles/HowItWorksPage.css';
 import '../styles/Navbar.css';
 
-function User () {
+function HowItWorks () {
     return (
     <>
     <nav className="navbar">
@@ -17,12 +17,12 @@ function User () {
         <li><Link to="/user" style={{ textDecoration: 'none' }} smooth>Account</Link></li>
       </ul>
     </nav>
-    <div className="userCard">
-        <h1 className="welcome">Welcome Back UserName</h1>
+    <div className="howCard">
+        <h1 className="worksTitle">How It Works</h1>
 
     </div>
     </>
     );
 }
 
-export default User;
+export default HowItWorks;

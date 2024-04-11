@@ -1,5 +1,5 @@
-require('dotenv').config();
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+// require('dotenv').config();
+// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const express = require('express');
 const { ApolloServer } = require('@apollo/server');
@@ -16,37 +16,35 @@ const server = new ApolloServer({
   resolvers,
 });
 
-// Will need to change the 
-const YOUR_DOMAIN = process.env.NODE_ENV === 'production' ? 'https://example.com' : `http://localhost:${PORT}`;
+// Will need to change the address to the deployed
+// const YOUR_DOMAIN = process.env.NODE_ENV === 'production' ? 'https://example.com' : `http://localhost:${PORT}`;
 
 // API Post request to /create-checkout-session
-app.post('/create-checkout-session', async (req, res) => {
-  // creats
-  const session = await stripe.checkout.sessions.create({
-    ui_mode: 'embedded',
-    line_items: [
-      {
+// app.post('/create-checkout-session', async (req, res) => {
+//   const session = await stripe.checkout.sessions.create({
+//     ui_mode: 'embedded',
+//     line_items: [
+//       {
         // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: '{{PRICE_ID}}',
-        quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    // This 
-    return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
-  });
+//         price: '{{PRICE_ID}}',
+//         quantity: 1,
+//       },
+//     ],
+//     mode: 'payment',
+//     return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
+//   });
 
-  res.send({clientSecret: session.client_secret});
-});
+//   res.send({clientSecret: session.client_secret});
+// });
 
-app.get('/session-status', async (req, res) => {
-  const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+// app.get('/session-status', async (req, res) => {
+//   const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
 
-  res.send({
-    status: session.status,
-    customer_email: session.customer_details.email
-  });
-});
+//   res.send({
+//     status: session.status,
+//     customer_email: session.customer_details.email
+//   });
+// });
 
 
 const startApolloServer = async () => {
