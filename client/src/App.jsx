@@ -2,12 +2,13 @@ import Navbar from "./components/pages/Navbar";
 import Footer from "./components/pages/Footer";
 import { Outlet } from "react-router-dom";
 
+import "./App.css"
+
 
 const App = () => {
     return (
       <>
-      <div>
-          <Navbar/>
+      <div className="background">
               <main>
                   <Outlet/>
               </main>
