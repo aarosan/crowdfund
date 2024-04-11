@@ -16,6 +16,7 @@
         "concurrently": "^5.3.0"
     },
     "dependencies": {
+        "bcrypt": "^5.1.1",
         "stripe": "^14.25.0"
     }
 }

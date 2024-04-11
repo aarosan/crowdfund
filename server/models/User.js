@@ -18,12 +18,6 @@ const userSchema = new Schema({
         required: true,
         minlength: 8,
     },
-    funds: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Fund',
-        },
-    ],
 });
 
 userSchema.methods.isCorrectPassword = async function (password) {
