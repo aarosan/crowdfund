@@ -7,9 +7,157 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-image: url("./components/styles/assets/city.png");
+    background-image: url("../public/images/city.png");
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: scroll;
 }
+
+.title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: 100px;
+    color: #F19236;
+}
+
+.titleAction {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #F19236;
+}
+
+.joinBtn {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.homeCard {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 800px;
+    background: whitesmoke;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: solid 3px #0D0630;
+    overflow: scroll;
+    box-shadow: 2px 2px #F19236;
+}
+
+.grid {
+    margin-top: 20px;
+}
+
+.howCard {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 800px;
+    background: whitesmoke;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: solid 3px #0D0630;
+    overflow: scroll;
+    box-shadow: 2px 2px #F19236;
+}
+
+.worksTitle {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #F19236;
+    text-decoration:  #0D0630 wavy underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    color: rgb(209, 25, 25);
+    font-size: 15px;
+    background: #8BBEB2;
+    margin-top: 30px;
+    border-radius: 50%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: ridge 3px #F19236;
+    }
+
+    .navbar ul {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    line-height: 5;
+    margin-left: -30px;
+    }
+
+    .navbar ul li {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;  
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style-type: none;
+    padding: 0px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+        margin-top: -70px;
+    }
+
+    .userCard {
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+        background: whitesmoke;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+    
+    .welcome {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        color: #F19236;
+        text-decoration:  #0D0630 wavy underline;
+    }
