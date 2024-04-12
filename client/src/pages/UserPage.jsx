@@ -1,9 +1,8 @@
 import React from 'react';
-import Logo from "../components/styles/assets/villageLogo.png"
+import Logo from "../../public/images/villageLogo.png"
 import { NavLink, Link } from 'react-router-dom';
 
-import '../components/styles/UserPage.css';
-import '../components/styles/Navbar.css';
+import '../../src/App.css'
 
 function User () {
     return (

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import "../components/styles/Footer.css"
+import "../../src/index.css"
 
 function Footer () {
     return (
     <>
     <div className="footer">
-        <h1 className="footerText"><i class="fa-regular fa-copyright"></i>2024 Takes A Village</h1>
+        <h1 className="footerText"><i className="fa-regular fa-copyright"></i>2024 Takes A Village</h1>
     </div>
     </>
     );

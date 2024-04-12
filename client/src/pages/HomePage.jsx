@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Logo from "../components/styles/assets/villageLogo.png"
+import Logo from "../../public/images/villageLogo.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -16,15 +16,15 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-import "../components/styles/HomePage.css";
-import '../components/styles/Navbar.css'
+import "../../src/App.css";
+import '../../src/index.css';
 
 function Home () {
     return (
     <>
     <nav className="navbar">
       <ul>
-        <li><Link to="/search" style={{ textDecoration: 'none' }} smooth>Search<i class="fa-solid fa-magnifying-glass"></i></Link></li>
+        <li><Link to="/search" style={{ textDecoration: 'none' }} smooth>Search<i className="fa-solid fa-magnifying-glass"></i></Link></li>
         <li><Link to="/how-it-works" style={{ textDecoration: 'none' }} smooth>How It Works</Link></li>
         <Link to={'/'}><img src={ Logo } /></Link>
         <li><Link to="/join" style={{ textDecoration: 'none' }} smooth>Join The Village</Link></li>
@@ -40,7 +40,7 @@ function Home () {
                 <h1 className="titleAction">Recent Calls To Action</h1>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
-                        <Grid md={8} md={12}>
+                        <Grid xs ={8} md={12}>
                             <Item> Photo</Item>
                             <Item>Title</Item>
                             <Item>Money Raised</Item>
