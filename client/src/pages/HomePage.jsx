@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Logo from "../../public/images/villageLogo.png";
+import Logo from "../../public/villageLogo.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,7 +17,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 import "../../src/App.css";
-import '../../src/index.css';
 
 function Home () {
     return (
