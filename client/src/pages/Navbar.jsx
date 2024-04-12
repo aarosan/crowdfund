@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Logo from "../styles/assets/villageLogo.png"
+import Logo from "../components/styles/assets/villageLogo.png"
 
-import '../styles/Navbar.css'
+import '../components/styles/Navbar.css'
 
 
 

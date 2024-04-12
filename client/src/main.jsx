@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client';
-import Home from './components/pages/HomePage';
-import Join from './components/pages/JoinPage';
-import User from './components/pages/UserPage';
-import FundDetail from './components/pages/FundDetailPage';
-import Search from './components/pages/SearchPage';
-import ErrorPage from './components/pages/ErrorPage';
-import HowItWorks from './components/pages/HowItWorksPage';
+import Home from './pages/HomePage';
+import Join from './pages/JoinPage';
+import User from './pages/UserPage';
+import FundDetail from './pages/FundDetailPage';
+import Search from './pages/SearchPage';
+import ErrorPage from './pages/ErrorPage';
+import HowItWorks from './pages/HowItWorksPage';
 import App from './App';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
