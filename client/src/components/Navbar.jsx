@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Logo from "../../public/images/villageLogo.png"
+import Logo from "../../public/villageLogo.png"
 
 import '../../src/App.css'
 

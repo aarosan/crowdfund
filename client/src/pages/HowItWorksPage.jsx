@@ -1,4 +1,7 @@
 import React from 'react';
+import Logo from "../../public/villageLogo.png"
+import { NavLink, Link } from 'react-router-dom';
+
 
 import '../../src/App.css';
 import '../../src/index.css';
