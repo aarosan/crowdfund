@@ -73,28 +73,3 @@ function Home () {
 }
 
 export default Home;
-
-{/* <Box sx={{ flexGrow: 1 }}>
-<Grid container spacing={2}>
-    <Grid xs ={8} md={12}>
-        <Item> Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-</Grid>
-</Box> */}
