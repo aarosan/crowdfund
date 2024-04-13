@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/************************/
+/* Main Page Background */
+/************************/
 .background {
     width: 100%;
     height: 100vh;
@@ -14,6 +17,9 @@
     overflow: scroll;
 }
 
+/************************/
+/*** Main Page Header ***/
+/************************/
 .title {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -43,9 +49,10 @@
     margin-top: 30px;
 }
 
+/************************/
+/*** Home Page Styling **/
+/************************/
 .homeCard {
-    display: flex;
-    justify-content: center;
     width: 1000px;
     height: 800px;
     background: whitesmoke;
@@ -62,9 +69,60 @@
     margin-top: 20px;
 }
 
+.actionCardsHome {
+    border: solid 3px #0D0630;
+    border-radius: 3px;
+    width: 500px;
+}
+
+.actionBox {
+    border: solid 3px #0D0630;
+    border-radius: 3px;
+    margin: 10px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.actionImg {
+    background-color: #F19236;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #0D0630;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.actionTitle {
+    height: 40px;
+    width: 80px;
+    margin: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.actionRaised {
+    height: 40px;
+    width: 80px;
+    margin: 0 15px 30px 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/************************/
+/* How It Works Styling */
+/************************/
 .howCard {
-    display: flex;
-    justify-content: center;
+    display: flex-box;
     width: 1000px;
     height: 800px;
     background: whitesmoke;
@@ -85,10 +143,26 @@
     font-size: 60px;
     margin-top: 50px;
     margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
     color: #F19236;
-    text-decoration:  #0D0630 wavy underline;
+    text-decoration:  #0D0630 solid underline;
 }
 
+.worksText {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0 50px 0 50px;
+}
+
+/************************/
+/**** NavBar Styling ****/
+/************************/
 .navbar {
     display: flex;
     justify-content: center;
@@ -135,6 +209,9 @@
         margin-top: -70px;
     }
 
+    /************************/
+    /* Account Page Styling */
+    /************************/
     .userCard {
         display: flex;
         justify-content: center;
@@ -161,3 +238,75 @@
         color: #F19236;
         text-decoration:  #0D0630 wavy underline;
     }
+
+    /************************/
+    /** Search Page Styling */
+    /************************/
+    .searchCard {
+        display: block;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+        background: whitesmoke;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .searchLabel {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+      }
+    
+    .searchInput {
+        display: block;
+        justify-content: center;
+        margin: 10px;
+        height: 30px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchBtn {
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #0D0630;
+        background: #F19236;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+    }
+
+    .searchPTag {
+        display: block;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: lightgray;
+    }
+

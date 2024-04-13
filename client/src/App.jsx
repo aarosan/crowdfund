@@ -9,6 +9,7 @@ const App = () => {
     return (
       <>
       <div className="background">
+            <Navbar/>
               <main>
                   <Outlet/>
               </main>
