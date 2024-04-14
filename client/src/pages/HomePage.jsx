@@ -6,7 +6,6 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Logo from "../../public/villageLogo.png";
 
 
 import "../../src/App.css";
@@ -74,28 +73,3 @@ function Home () {
 }
 
 export default Home;
-
-{/* <Box sx={{ flexGrow: 1 }}>
-<Grid container spacing={2}>
-    <Grid xs ={8} md={12}>
-        <Item> Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-    <Grid xs={8} md={12}>
-        <Item>Photo</Item>
-        <Item>Title</Item>
-        <Item>Money Raised</Item>
-    </Grid>
-</Grid>
-</Box> */}

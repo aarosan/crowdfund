@@ -310,3 +310,224 @@
         color: lightgray;
     }
 
+    /************************/
+    /** Join Page Styling */
+    /************************/
+    .joinCard {
+        display: flex-box;
+        width: 1000px;
+        height: 2720px;
+        background: whitesmoke;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .titleJoin {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 60px;
+        margin-top: 100px;
+        color: #F19236;
+    }
+
+    .getStarted {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 40px;
+        margin-top: 30px;
+        color: #F19236;
+    }
+ 
+    /* STEP 1 - create username and stuff*/
+    .addInfoCard {
+        width: 500px;
+        height: 500px;
+        background: whitesmoke;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .infoBox {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .fName {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+    }
+
+    .lName {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+    }
+
+    .email {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-left: 40px;
+    }
+    /* STEP 2 - add information for the call to action*/
+    .addActionCard {
+        width: 500px;
+        height: 730px;
+        background: whitesmoke;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .actionDesc {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .actionTitle{
+        width: 430px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    .actionText{
+        width: 430px;
+        height: 200px;
+    }
+
+    .donationAmount {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+    }
+
+
+    /* STEP 3 - upload images*/
+    .addImageCard {
+        width: 500px;
+        height: 700px;
+        background: whitesmoke;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .stepsText {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 40px;
+        margin-top: 30px;
+        color: #0D0630;
+    }
+
+    .formText {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #F19236;
+    }
+
+    .dropBtn {
+        width: 300px;
+        height: 300px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background:#F19236;
+        border-radius: 4px;
+        border: 3px dotted #0D0630;
+    }
+
+    .removeBtn {
+        width: 100px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color: whitesmoke;
+        background: #0D0630;
+        border-radius: 4px;
+        margin: 10px;
+    }
+
+    .upload__image-wrapper {
+        margin-right: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .image-item__btn-wrapper {
+        padding: 10px;
+    }
+
+    /* STEP 4 - verify and submit*/
+    .submitCard {
+        width: 500px;
+        height: 220px;
+        background: whitesmoke;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+        margin-bottom: 40px;
+    }
+
+    .completeText {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #F19236;
+        padding: 15px;
+    }
+
+    .createCall {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+
