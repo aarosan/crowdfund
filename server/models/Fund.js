@@ -12,7 +12,18 @@ const fundSchema = new Schema({
     },
     goal: {
         type: Number,
-    }
+    },
+    creator: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    },
+    donations: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Donation',
+        },
+    ],
 });
 
 const Fund = model('Fund', fundSchema);

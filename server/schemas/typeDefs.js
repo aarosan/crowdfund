@@ -1,42 +1,57 @@
-const typeDefs = `
+const { gql } = require('apollo-server-express');
+
+const typeDefs = gql`
     type User {
         _id: ID
-        username: String!
-        email: String!
-        password: String!
+        username: String
+        email: String
+        password: String
+        funds: [Fund]!
+        donations: [Donation]!
     }
 
     type Fund {
         _id: ID
-        name: String!
-        description: String!
+        name: String
+        description: String
         goal: Float
+        creator: User!
+        donations: [Donation]!
     }
 
     type Donation {
         _id: ID
-        amount: Float!
+        amount: Float
         createdAt: String
-        fund: [Fund]
-        user: [User]
+        fund: Fund!
+        user: User
+        donor: String!
+    }
+
+    type Auth {
+        token: ID!
+        user: User
+    }
+
+    type FundAndAuth {
+        fund: Fund
+        token: ID!
     }
 
     type Query {
-        getAllFunds: [Fund]!
+        getAllFunds: [Fund]
         getFundById(fundId: ID!): Fund
-        getUser(userId: ID!): User
-        getDonationsbyFund(fundId: ID!): [Donation]
-        getDonationsbyUser(userId: ID!): [Donation]
+        me: User
     }
 
     type Mutation {
-        createUser(username: String!, email: String!, password: String!): User
-        login(email: String!, password: String!): User
-        createFund(name: String!, description: String!, goal: Float): Fund
-        createDonation(amount: Float!, fund: ID!, user: ID!): Donation
+        signup(name: String!, description: String!, goal: Float, creator: ID, username: String!, email: String!, password: String!): FundAndAuth
+        createFund(name: String!, description: String!, goal: Float, creator: ID): Fund
+        login(email: String!, password: String!): Auth
+        createDonation(amount: Float!, fund: ID!, user: ID, donor: String!): Donation
         updateFund(fundId: ID!, name: String, description: String, goal: Float): Fund
-        deleteFund(fundId: ID!): Fund
-    }
+        deleteFund(fundId: ID!): User
+      }
 `;
 
 module.exports = typeDefs;
