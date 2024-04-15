@@ -18,6 +18,27 @@ const userSchema = new Schema({
         required: true,
         minlength: 8,
     },
+    funds: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Fund',
+        },
+    ],
+    donations: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Donation',
+        },
+    ],
+});
+
+userSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+        const saltRounds = 10;
+        this.password = await bcrypt.hash(this.password, saltRounds);
+    }
+
+    next();
 });
 
 userSchema.methods.isCorrectPassword = async function (password) {
