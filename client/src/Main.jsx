@@ -7,7 +7,7 @@ import Search from './pages/SearchPage';
 import ErrorPage from './pages/ErrorPage';
 import HowItWorks from './pages/HowItWorksPage';
 import Login from './pages/LoginPage';
-import Signup from './pages/SignUpPage';
+// import Signup from './pages/SignUpPage';
 import App from './App';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -46,10 +46,6 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
-      },
-      {
-        path: '/signup',
-        element: <Signup />,
       }
     ],
   },
