@@ -30,6 +30,10 @@ function Login() {
     });
   };
 
+  const handleLogout = () => {
+    Auth.logout();
+  };
+
   return (
     <div className="loginCard">
       <label className="loginLabel">Login</label>
