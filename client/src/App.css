@@ -530,4 +530,120 @@
         margin-top: 30px;
     }
 
+    /************************/
+    /** Login Page Styling */
+    /************************/
+    .loginCard {
+        display: block;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+        background: whitesmoke;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .loginLabel {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+      }
+    
+    .loginInput {
+        display: block;
+        justify-content: center;
+        margin: 10px;
+        height: 30px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .loginBtn {
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #0D0630;
+        background: #F19236;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+    }
+
+    /************************/
+    /** Signup Page Styling */
+    /************************/
+    .signupCard {
+        display: block;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+        background: whitesmoke;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .signupLabel {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+      }
+    
+    .signupInput {
+        display: block;
+        justify-content: center;
+        margin: 10px;
+        height: 30px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signupBtn {
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #0D0630;
+        background: #F19236;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+    }
+
 

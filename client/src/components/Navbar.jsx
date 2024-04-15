@@ -16,7 +16,7 @@ function Navbar () {
         <li><Link to="/how-it-works" style={{ textDecoration: 'none' }} smooth>How It Works</Link></li>
         <Link to={'/'}><img src={ Logo } /></Link>
         <li><Link to="/join" style={{ textDecoration: 'none' }} smooth>Join The Village</Link></li>
-        <li><Link to="/signIn" style={{ textDecoration: 'none' }} smooth>Sign In</Link></li>
+        <li><Link to="/login" style={{ textDecoration: 'none' }} smooth>Login</Link></li>
       </ul>
     </nav>
     </>
