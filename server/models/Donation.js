@@ -1,4 +1,4 @@
-const { Schema, model, mongo, default: mongoose } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const donationSchema = new Schema({
     amount: {
@@ -10,15 +10,19 @@ const donationSchema = new Schema({
         default: Date.now,
     },
     fund: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Fund',
         required: true,
     },
     user: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'User',
-        required: true,
     },
+    donor: {
+        type: String,
+        required: true,
+    }
+        
 });
 
 const Donation = model('Donation', donationSchema);
