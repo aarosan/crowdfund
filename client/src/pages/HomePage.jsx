@@ -1,11 +1,5 @@
-import * as React from 'react';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
-import { NavLink, Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 
 
@@ -16,7 +10,7 @@ function Home () {
     <>
     <h1 className="title">It's A Community<br></br>Call To Action</h1>
         <div className="joinBtn">
-        {Auth.loggedIn() ? (
+        {/* {Auth.loggedIn() ? (
             <Link to="/user">
             <Button variant="contained">Your Calls To Action</Button>
             </Link>
@@ -24,7 +18,7 @@ function Home () {
             <Link to="/join">
             <Button variant="contained">Join the Village</Button>
             </Link>
-        )}
+        )} */}
         </div>
         <div className="homeCard">
             <div className="grid">
