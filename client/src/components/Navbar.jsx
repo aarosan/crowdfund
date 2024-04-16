@@ -18,7 +18,7 @@ function Navbar () {
       <ul>
         <li><Link to="/search" style={{ textDecoration: 'none' }} >Search<i className="fa-solid fa-magnifying-glass"></i></Link></li>
         <li><Link to="/how-it-works" style={{ textDecoration: 'none' }} >How It Works</Link></li>
-        <Link to={'/'}><img src={ Logo } /></Link>
+        <Link to={'/'}><img className="visImg" src={ Logo } /></Link>
         {Auth.loggedIn() ? (
             <li><Link to="/user" style={{ textDecoration: 'none' }} >Your Calls To Action</Link></li>
           ) : (
@@ -31,6 +31,9 @@ function Navbar () {
           )}
       </ul>
     </nav>
+    <div>
+        <Link to={'/'}><img className="invisImg" src={ Logo }/></Link>
+    </div>
     </>
     );
 }
