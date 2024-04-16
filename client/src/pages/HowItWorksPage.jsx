@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from "../../public/villageLogo.png"
-import { NavLink, Link } from 'react-router-dom';
+// import React from 'react';
+// import Logo from "../../public/villageLogo.png"
+// import { NavLink, Link } from 'react-router-dom';
 
 
 import '../../src/App.css';

@@ -1,11 +1,5 @@
-import * as React from 'react';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
-import { NavLink, Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 
 

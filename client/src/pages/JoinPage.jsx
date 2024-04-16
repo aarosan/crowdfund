@@ -83,8 +83,7 @@ function Join () {
                             value={images}
                             onChange={onChange}
                             maxNumber={maxNumber}
-                            dataURLKey="data_url"
-                        >
+                            {/* dataURLKey={data_url} */}
                             {({
                             imageList,
                             onImageUpload,

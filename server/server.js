@@ -10,42 +10,12 @@ const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
-
-// Will need to change the address to the deployed
-// const YOUR_DOMAIN = process.env.NODE_ENV === 'production' ? 'https://example.com' : `http://localhost:${PORT}`;
-
-// API Post request to /create-checkout-session
-// app.post('/create-checkout-session', async (req, res) => {
-//   const session = await stripe.checkout.sessions.create({
-//     ui_mode: 'embedded',
-//     line_items: [
-//       {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-//         price: '{{PRICE_ID}}',
-//         quantity: 1,
-//       },
-//     ],
-//     mode: 'payment',
-//     return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
-//   });
-
-//   res.send({clientSecret: session.client_secret});
-// });
-
-// app.get('/session-status', async (req, res) => {
-//   const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
-
-//   res.send({
-//     status: session.status,
-//     customer_email: session.customer_details.email
-//   });
-// });
 
 
 const startApolloServer = async () => {
@@ -78,3 +48,33 @@ const startApolloServer = async () => {
 };
 
 startApolloServer();
+
+// Will need to change the address to the deployed
+// const YOUR_DOMAIN = process.env.NODE_ENV === 'production' ? 'https://example.com' : `http://localhost:${PORT}`;
+
+// API Post request to /create-checkout-session
+// app.post('/create-checkout-session', async (req, res) => {
+//   const session = await stripe.checkout.sessions.create({
+//     ui_mode: 'embedded',
+//     line_items: [
+//       {
+        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+//         price: '{{PRICE_ID}}',
+//         quantity: 1,
+//       },
+//     ],
+//     mode: 'payment',
+//     return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
+//   });
+
+//   res.send({clientSecret: session.client_secret});
+// });
+
+// app.get('/session-status', async (req, res) => {
+//   const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+
+//   res.send({
+//     status: session.status,
+//     customer_email: session.customer_details.email
+//   });
+// });
