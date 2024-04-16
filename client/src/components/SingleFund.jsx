@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 function SingleFund({ fund }) {
 
@@ -15,8 +16,9 @@ function SingleFund({ fund }) {
                 <h4>Goal: {fund.goal}</h4>
                 <h4>Amount Raised: {totalRaised} </h4>
             </div>
-            <button>Donate</button>
-            <button>View Details</button>
+            <Link to={`/detail/${fund._id}`}>
+                <button>View Details or Donate</button>
+            </Link>
         </div>
     );
 }  
