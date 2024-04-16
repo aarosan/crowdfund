@@ -646,4 +646,151 @@
         border-radius: 4px;
     }
 
+    /*****************************/
+    /** Fund Detail Page Styling */
+    /*****************************/
+    .detailCard {
+        display: block;
+        justify-content: center;
+        width: 1000px;
+        height: 600px;
+        background: whitesmoke;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .detailHeader {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 50px;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+    }
+
+    .detailInfo {
+        display: block;
+        justify-content: center;
+        width: 600px;
+        height: 400px;
+        background: whitesmoke;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: 30px;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .donationDetail {
+        display: block;
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+        background: whitesmoke;
+        margin-top: -400px;
+        margin-right: 30px;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .donationHeader {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #0D0630;
+        border-bottom: 3px solid #0D0630;
+        background: #8BBEB2;
+    }
+
+    .donationGiven {
+        display: block;
+        justify-content:left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px;
+        margin: 20px;
+        color: #0D0630;
+        border: 3px solid #0D0630;
+        box-shadow: 2px 2px #F19236;
+        border-radius: 5px;
+    }
+
+    .comingSoonCard {
+        display: block;
+        width: 180px;
+        height: 180px;
+        background: #8BBEB2;
+        padding: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border: 3px dotted #0D0630;
+        border-radius: 5px;
+    }
+
+    .comingSoonText {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    .actionInfo {
+        display: block;
+        justify-content:left;
+        height: 160px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 15px;
+        padding: 10px;
+        margin: 20px;
+        color: #0D0630;
+        border: 3px solid #0D0630;
+        box-shadow: 2px 2px #F19236;
+        border-radius: 5px;
+    }
+
+    .amountDonated {
+        display: block;
+        padding: 5px;
+    }
+
+    .description {
+        display: block;
+        padding: 5px;
+        height: 80px;
+    }
+
+    .detailTitle {
+        display: block;
+        padding: 5px;
+    }
+
+
 
