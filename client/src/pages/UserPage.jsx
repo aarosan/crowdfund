@@ -17,8 +17,13 @@ function User() {
     return (
       <>
         <div className="userCard">
-          <h1 className="welcome">Welcome Back {data.me.username}</h1>
-          {/* Render other data from the query as needed */}
+          <h1 className="welcome">Welcome back {data.me.username}</h1>
+        </div>
+        <div>
+          <h1 className="welcome">Donations: {data.me.donations}</h1>
+        </div>
+        <div>
+          <h1 className="welcome">Calls to Action: {data.me.funds.name}</h1>
         </div>
       </>
     );
