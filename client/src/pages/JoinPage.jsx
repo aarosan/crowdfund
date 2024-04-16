@@ -18,7 +18,7 @@ function Join () {
     <>
     <h1 className="titleJoin">Make Your<br></br>Call To Action</h1>
     <div className="joinCard">
-        <h3 className="titleJoin">Lets Get Started!</h3>
+        <h3 className="title2">Lets Get Started!</h3>
             <div>
                 <h4 className="stepsText">Step 1:</h4>
                     <div className="addInfoCard">
