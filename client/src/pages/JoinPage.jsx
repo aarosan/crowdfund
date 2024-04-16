@@ -78,7 +78,7 @@ function Join () {
             <div className="addImageCard">
                 <h4 className="formText">Upload your Call To Action image:</h4>
                     <div>
-                        <ImageUploading
+                        <div>
                             multiple
                             value={images}
                             onChange={onChange}
@@ -101,7 +101,7 @@ function Join () {
                                 onClick={onImageUpload}
                                 {...dragProps}
                                 >
-                                Click or Drop image here <i class="fa-solid fa-upload"></i>
+                                Click or Drop image here <i className="fa-solid fa-upload"></i>
                                 </button>
                                 &nbsp;
                                 <button className="removeBtn" onClick={onImageRemoveAll}>Remove all images</button>
@@ -116,7 +116,7 @@ function Join () {
                                 ))}
                             </div>
                             )}
-                        </ImageUploading>
+                        </div>
                     </div>
                 </div>
         <h4 className="stepsText">Step 4:</h4>
