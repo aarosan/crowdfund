@@ -10,7 +10,7 @@ function Home () {
     <>
     <h1 className="title">It's A Community<br></br>Call To Action</h1>
         <div className="joinBtn">
-        {/* {Auth.loggedIn() ? (
+        {Auth.loggedIn() ? (
             <Link to="/user">
             <Button variant="contained">Your Calls To Action</Button>
             </Link>
@@ -18,7 +18,7 @@ function Home () {
             <Link to="/join">
             <Button variant="contained">Join the Village</Button>
             </Link>
-        )} */}
+        )}
         </div>
         <div className="homeCard">
             <div className="grid">
