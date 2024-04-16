@@ -26,8 +26,8 @@
     font-weight: 100;
     font-style: normal;
     font-size: 60px;
-    margin-top: 100px;
     color: #F19236;
+    margin-top: -70px;
 }
 
 .titleAction {
@@ -126,7 +126,7 @@
     width: 1000px;
     height: 800px;
     background: whitesmoke;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
@@ -209,8 +209,16 @@
         margin-top: -70px;
     }
 
+    .invisImg {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        visibility: hidden;
+    }
+
     /************************/
-    /* Account Page Styling */
+    /*** User Page Styling **/
     /************************/
     .userCard {
         display: flex;
@@ -218,7 +226,7 @@
         width: 1000px;
         height: 800px;
         background: whitesmoke;
-        margin-top: 200px;
+        margin-top: 50px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px;
@@ -232,11 +240,10 @@
         font-family: "Poppins", sans-serif;
         font-weight: 100;
         font-style: normal;
-        font-size: 60px;
+        font-size: 40px;
         margin-top: 50px;
         margin-bottom: 10px;
         color: #F19236;
-        text-decoration:  #0D0630 wavy underline;
     }
 
     /************************/
@@ -248,7 +255,7 @@
         width: 1000px;
         height: 800px;
         background: whitesmoke;
-        margin-top: 200px;
+        margin-top: 50px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px;
@@ -333,7 +340,17 @@
         font-weight: 100;
         font-style: normal;
         font-size: 60px;
-        margin-top: 100px;
+        margin-top: -100px;
+        color: #F19236;
+    }
+
+    .title2 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 60px;
+        margin-top: 15px;
         color: #F19236;
     }
 
@@ -530,132 +547,17 @@
         margin-top: 30px;
     }
 
-    /************************/
-    /** Login Page Styling */
-    /************************/
-    .loginCard {
-        display: block;
-        justify-content: center;
-        width: 1000px;
-        height: 800px;
-        background: whitesmoke;
-        margin-top: 200px;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 10px;
-        border: solid 3px #0D0630;
-        overflow: scroll;
-        box-shadow: 2px 2px #F19236;
-    }
-
-    .loginLabel {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 30px;
-        margin: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #F19236;
-      }
-    
-    .loginInput {
-        display: block;
-        justify-content: center;
-        margin: 10px;
-        height: 30px;
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .loginBtn {
-        display: block;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        color: #0D0630;
-        background: #F19236;
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 4px;
-    }
-
-    /************************/
-    /** Signup Page Styling */
-    /************************/
-    .signupCard {
-        display: block;
-        justify-content: center;
-        width: 1000px;
-        height: 800px;
-        background: whitesmoke;
-        margin-top: 200px;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 10px;
-        border: solid 3px #0D0630;
-        overflow: scroll;
-        box-shadow: 2px 2px #F19236;
-    }
-
-    .signupLabel {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 30px;
-        margin: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #F19236;
-      }
-    
-    .signupInput {
-        display: block;
-        justify-content: center;
-        margin: 10px;
-        height: 30px;
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .signupBtn {
-        display: block;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        color: #0D0630;
-        background: #F19236;
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 4px;
-    }
-
     /*****************************/
     /** Fund Detail Page Styling */
     /*****************************/
+
     .detailCard {
         display: block;
         justify-content: center;
         width: 1000px;
         height: 600px;
         background: whitesmoke;
-        margin-top: 200px;
+        margin-top: 50px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px;
@@ -792,5 +694,379 @@
         padding: 5px;
     }
 
+    /*****************************/
+    /****** Media Queries ********/
+    /*****************************/
+    @media (max-width: 1019px) {
+        .navbar {
+            font-size: 15px;
+            border-radius: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            border: ridge 3px #F19236;
+            margin-top: 0px;
+            }
+        
+        .navbar ul {
+            margin-left: -30px;
+        }
 
+        .homeCard {
+            width: 800px;
+        }
 
+        .searchCard {
+            width: 800px;
+        }
+
+        .howCard {
+            width: 800px;
+        }
+
+        .joinCard {
+            width: 800px;
+        }
+
+        .userCard {
+            width: 800px;
+        }
+
+        .titleJoin {
+            font-size: 60px;
+            margin-top: -50px;
+            color: #F19236;
+        }
+
+        .detailCard {
+            width: 800px;
+            height: 1000px;
+            margin-top: 0px;
+        }
+
+        .detailInfo {
+            margin-left: auto;
+        }
+
+        .donationDetail {
+            width: 600px;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (max-width: 885px) {
+        .navbar {
+            font-size: 15px;
+            border-radius: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            border: ridge 3px #F19236;
+            margin-top: 0px;
+        }
+        
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            text-decoration: none;
+            line-height: 5;
+            margin-left: 0px;
+        }
+        
+        .navbar ul li {
+            display: flex;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;  
+            font-size: 15px;
+            margin-top: auto;
+            margin-bottom: auto;
+            list-style-type: none;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .visImg {
+            width: 0px;
+            height: auto;
+            margin-top: 0px;
+            visibility: hidden;
+        }
+        
+        .invisImg {
+            margin-top: -40px;
+            visibility: visible;
+        }
+
+        .title {
+            font-size: 40px;
+            margin-top: -50px;
+        }
+        
+        .titleAction {
+            font-size: 30px;
+        }
+
+        .homeCard {
+            width: 400px;
+        }
+
+        .grid {
+            margin-top: 20px;
+        }
+        
+        .actionCardHome {
+            width: 370px;
+        }
+        
+        .actionBox {
+            margin: 10px;
+            width: 370px;
+        }
+
+        .searchCard {
+            width: 400px;
+            margin-top: -50px;
+        }
+        
+        .searchLabel {
+            font-size: 20px;
+          }
+        
+        .searchInput {
+            width: 350px;
+        }
+    
+        .searchBtn {
+            font-size: 20px;
+        }
+    
+        .searchPTag {
+            font-size: 20px;
+        }
+
+        .howCard {
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        .worksTitle {
+            font-size: 40px;
+        }
+        
+        .worksText {
+            font-size: 15px;
+        }
+
+        .joinCard {
+            width: 400px;
+            height: 2720px;
+            margin-top: 100px;
+        }
+    
+        .titleJoin {
+            font-size: 50px;
+            margin-top: 0px;
+        }
+    
+        .title2 {
+            font-size: 40px;
+        }
+     
+        /* STEP 1 - create username and stuff*/
+        .addInfoCard {
+            width: 370px;
+            height: 600px;
+        }
+    
+        .email {
+            margin-left: 0px;
+        }
+
+        /* STEP 2 - add information for the call to action*/
+        .addActionCard {
+            width: 370px;
+            height: 650px;
+        }
+    
+        .actionDesc {
+            font-size: 15px;
+            padding: 5px;
+        }
+    
+        .actionTitle{
+            width: 325px;
+            height: 30px;
+            padding: 10px;
+            font-size: 15px;
+        }
+    
+        .actionText{
+            width: 325px;
+            height: 200px;
+        }
+    
+        .donationAmount {
+            width: 300px;
+            font-size: 10px;
+        }
+    
+    
+        /* STEP 3 - upload images*/
+        .addImageCard {
+            width: 370px;
+            height: 700px;
+        }
+    
+        .stepsText {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 40px;
+            margin-top: 30px;
+            color: #0D0630;
+        }
+    
+        .formText {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #F19236;
+        }
+    
+        .dropBtn {
+            width: 300px;
+            height: 300px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            background:#F19236;
+            border-radius: 4px;
+            border: 3px dotted #0D0630;
+        }
+    
+        .upload__image-wrapper {
+            margin-right: 20px;
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+    
+        .image-item__btn-wrapper {
+            padding: 10px;
+        }
+    
+        /* STEP 4 - verify and submit*/
+        .submitCard {
+            width: 370px;
+            margin-bottom: 40px;
+        }
+
+        .detailCard {
+            width: 370px;
+            height: 1000px;
+            margin-top: 0px;
+        }
+
+        .detailInfo {
+            margin-left: auto;
+        }
+
+        .donationDetail {
+            width: 370px;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .detailHeader {
+            font-size: 40px;
+        }
+    
+        .detailInfo {
+            display: block;
+            justify-content: center;
+            width: 350px;
+            height: 400px;
+            background: whitesmoke;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+            border: solid 3px #0D0630;
+            overflow: scroll;
+            box-shadow: 2px 2px #F19236;
+        }
+    
+        .donationDetail {
+            width: 350px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+            border: solid 3px #0D0630;
+            overflow: scroll;
+            box-shadow: 2px 2px #F19236;
+        }
+    
+        .comingSoonCard {
+            display: block;
+            width: 180px;
+            height: 180px;
+            background: #8BBEB2;
+            padding: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: 3px dotted #0D0630;
+            border-radius: 5px;
+        }
+    
+        .comingSoonText {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+    
+        .actionInfo {
+            display: block;
+            justify-content:left;
+            height: 160px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 15px;
+            padding: 10px;
+            margin: 20px;
+            color: #0D0630;
+            border: 3px solid #0D0630;
+            box-shadow: 2px 2px #F19236;
+            border-radius: 5px;
+        }
+    
+        .amountDonated {
+            display: block;
+            padding: 5px;
+        }
+    
+        .description {
+            display: block;
+            padding: 5px;
+            height: 80px;
+        }
+    
+        .detailTitle {
+            display: block;
+            padding: 5px;
+        }
+    }
