@@ -25,7 +25,7 @@ const typeDefs = gql`
         createdAt: String
         fund: Fund!
         user: User
-        donor: String!
+        donor: String
     }
 
     type Auth {
