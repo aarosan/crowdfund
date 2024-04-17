@@ -1,5 +1,4 @@
-import React from "react";
-import { UseState } from "react";
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import ImageUploading from 'react-images-uploading';
 
@@ -12,7 +11,7 @@ import { useMutation } from "@apollo/client";
 import { SIGNUP_USER_FUND } from "../utils/mutations";
 
 function Join() {
-  const [formState, setFormState] = UseState({
+  const [formState, setFormState] = useState({
     username: '',
     email: '',
     password: '',
@@ -38,7 +37,9 @@ function Join() {
 
     try {
       const { data } = await signupUserFund({
-        variables: { ...formState },
+        variables: { ...formState,
+        goal: parseFloat(formState.goal),
+    },
       });
     } catch (e) {
       console.error(e);
@@ -58,7 +59,7 @@ function Join() {
             {data ? (
               <p>
                 Success! You may now head{" "}
-                <Link to="/">back to the homepage</Link>
+                <Link to="/">back to the homepage </Link>
                 or <Link to="/user">your profile</Link>
               </p>
             ) : (
@@ -107,6 +108,7 @@ function Join() {
                 <input
                   className="goal"
                   type="number"
+                  step="any"
                   placeholder="What is your goal?"
                   name="goal"
                   value={formState.goal}
