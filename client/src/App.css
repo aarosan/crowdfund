@@ -80,6 +80,7 @@
     border-radius: 3px;
     margin: 10px;
     width: 600px;
+    height: 300px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -95,27 +96,51 @@
 }
 
 .actionTitle {
-    height: 40px;
-    width: 80px;
-    margin: 15px;
+    background: #8BBEB2;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 25px;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+.actionCreator {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.actionDesc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 10px;
 }
 
 .actionRaised {
-    height: 40px;
-    width: 80px;
-    margin: 0 15px 30px 15px;
+    height: 60px;
+    width: 150px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
+    margin-left: 40px;
+}
+.donateBtn {
+    display: block;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #0D0630;
+    color: whitesmoke;
+    text-decoration: none;
+
 }
 
 /************************/
