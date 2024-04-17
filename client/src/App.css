@@ -1070,3 +1070,122 @@
             padding: 5px;
         }
     }
+
+    /************************/
+    /** Login Page Styling **/
+    /************************/
+    .loginCard {
+        display: block;
+        justify-content: center;
+        width: 1000px;
+        height: 620px;
+        background: whitesmoke;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .loginText {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+      }
+
+    .loginLabel {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #F19236;
+    }
+
+    .loginInput1 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .loginInput2 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 380px;
+    }
+
+    .loginBtn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 6px;
+        background: #8BBEB2;
+    }
+
+    .notUser {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    @media (max-width: 1019px) {
+        .loginCard {
+            width: 800px;
+        }
+    }
+
+    @media (max-width: 885px) {
+        .loginCard {
+            width: 370px;
+            height: 500px;
+        }
+
+        .loginText {
+            font-size: 30px;
+          }
+    
+        .loginLabel {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    
+        .loginInput1 {
+            font-size: 20px;
+            margin-top: 15px;
+            width: 300px;
+        }
+    
+        .loginInput2 {
+            font-size: 20px;
+            margin-top: 15px;
+            width: 300px;
+        }
+    }
