@@ -10,6 +10,7 @@ import Login from './pages/LoginPage';
 // import SingleFund from './components/SingleFund';
 // import Signup from './pages/SignUpPage';
 import App from './App';
+import Stripe from './pages/Stripe';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/stripe',
+        element: <Stripe />
       }
     ],
   },
