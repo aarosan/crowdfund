@@ -7,7 +7,7 @@ import Search from './pages/SearchPage';
 import ErrorPage from './pages/ErrorPage';
 import HowItWorks from './pages/HowItWorksPage';
 import Login from './pages/LoginPage';
-import SingleFund from './components/SingleFund';
+// import SingleFund from './components/SingleFund';
 // import Signup from './pages/SignUpPage';
 import App from './App';
 

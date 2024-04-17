@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Link } from 'react-router-dom';
 // import { HashLink } from 'react-router-hash-link';
-import Logo from "../../public/villageLogo.png"
+import Logo from "/villageLogo.png"
 import Auth from '../utils/auth';
 import '../../src/App.css'
 
