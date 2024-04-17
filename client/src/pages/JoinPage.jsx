@@ -125,6 +125,7 @@ function Join() {
           </div>
         </div>
       </div>
+      </div>
     </>
   );
 }
