@@ -20,10 +20,17 @@ function User() {
           <h1 className="welcome">Welcome back {data.me.username}</h1>
         </div>
         <div>
-          <h1 className="welcome">Donations: {data.me.donations}</h1>
+          <h1 className="welcome">Email: {data.me.email}</h1>
         </div>
         <div>
-          <h1 className="welcome">Calls to Action: {data.me.funds.name}</h1>
+          {data.me.funds.map((fund, index)=> (
+                    <div key={index} >
+                        <h1>Your Calls:{fund.name}</h1>
+                        <h1>Call Description:{fund.description}</h1>
+                        <h1>Goal:{fund.goal}</h1>
+                    </div>
+                    
+                ))}
         </div>
       </>
     );
