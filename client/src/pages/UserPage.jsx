@@ -1,4 +1,4 @@
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import { GET_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 
@@ -16,15 +16,19 @@ function User() {
   
     return (
       <>
-        <div className="userCard">
-          <h1 className="welcome">Welcome back {data.me.username}</h1>
+      <div className="userCard">
+          <h1 className="welcome">Welcome back, {data.me.username}</h1>
+          <h1 className="userEmail">Email: {data.me.email}</h1>
+        <div className="myCalls">
+          {data.me.funds.map((fund, index)=> (
+                    <div key={index} >
+                        <h1 className="detailTitle">Your Calls:{fund.name}</h1>
+                        <h1 className="description">Call Description:{fund.description}</h1>
+                        <h1 className="amountDonated">Goal:{fund.goal}</h1>
+                    </div>
+                ))}
         </div>
-        <div>
-          <h1 className="welcome">Donations: {data.me.donations}</h1>
-        </div>
-        <div>
-          <h1 className="welcome">Calls to Action: {data.me.funds.name}</h1>
-        </div>
+      </div>
       </>
     );
   }

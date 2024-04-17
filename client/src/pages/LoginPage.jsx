@@ -32,11 +32,11 @@ function Login() {
 
   return (
     <div className="loginCard">
-      <label className="loginLabel">Login</label>
+      <div className="loginText">Login</div>
       <form onSubmit={handleFormSubmit}>
         <div className="loginLabel">
           <label htmlFor="email">Email:</label>
-          <input className="loginInput"
+          <input className="loginInput1"
             placeholder="Enter Email Address"
             name="email"
             type="email"
@@ -46,7 +46,7 @@ function Login() {
         </div>
         <div className="loginLabel">
           <label htmlFor="pwd">Password:</label>
-          <input className="loginInput"
+          <input className="loginInput2"
             placeholder="Enter Password"
             name="password"
             type="password"
@@ -63,7 +63,7 @@ function Login() {
           <button className="loginBtn" type="submit">Submit</button>
         </div>
       </form>
-      <div>             
+      <div className="notUser">             
         <p>Not a user? <Link to="/join">Join The Village</Link></p>          
       </div>
     </div>

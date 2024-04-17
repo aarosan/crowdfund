@@ -1,8 +1,9 @@
 import React from "react";
 import { UseState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 // import ImageUploading from 'react-images-uploading';
-import Button from "@mui/material/Button";
+
+import Button from '@mui/material/Button';
 
 import "../../src/App.css";
 import "../../src/index.css";
@@ -51,6 +52,7 @@ function Join() {
       </h1>
       <div className="joinCard">
         <h3 className="title2">Lets Get Started!</h3>
+        <p>Already a User? <Link to="/login">Login</Link></p>  
         <div>
           <div className="addInfoCard">
             {data ? (
