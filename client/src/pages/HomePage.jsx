@@ -9,10 +9,10 @@ import SingleFund from '../components/SingleFund';
 import { GET_ALL_FUNDS } from '../utils/queries';
 
 function Home () {
-    const { loading, error, data } = useQuery(GET_ALL_FUNDS);
-
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error :{error.message}</p>;
+    // const { loading, error, data } = useQuery(GET_ALL_FUNDS);
+    
+    // if (loading) return <p>Loading...</p>;
+    // if (error) return <p>Error :{error.message}</p>;
 
     return (
         <>
@@ -31,11 +31,11 @@ function Home () {
             <div className="homeCard">
                 <div className="grid">
                     <h1 className="titleAction">Recent Calls To Action</h1>
-                    <div className="actionCardHome">
+                    {/* <div className="actionCardHome">
                         {data.getAllFunds.map((fund) => (
                             <SingleFund key={fund._id} fund={fund} />
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
