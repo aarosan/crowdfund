@@ -381,6 +381,16 @@
         box-shadow: 2px 2px #F19236;
     }
 
+    .alreadyUser {
+        text-align: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
     .titleJoin {
         text-align: center;
         font-family: "Poppins", sans-serif;
