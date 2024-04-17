@@ -19,7 +19,8 @@ function Join () {
     <>
     <h1 className="titleJoin">Make Your<br></br>Call To Action</h1>
     <div className="joinCard">
-    <div>       <p>Already a User? <Link to="/login">Login</Link></p>      
+    <div>       
+        <p className="alreadyUser">Already a User? <Link to="/login">Login</Link></p>      
     </div>
         <h3 className="title2">Lets Get Started!</h3>
             <div>
