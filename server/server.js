@@ -1,6 +1,3 @@
-// require('dotenv').config();
-// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-
 const express = require('express');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
@@ -17,6 +14,36 @@ const server = new ApolloServer({
   resolvers,
 });
 
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+const calculateOrderAmount = (items) => {
+  // Replace this constant with a calculation of the order's amount
+  // Calculate the order total on the server to prevent
+  // people from directly manipulating the amount on the client
+  return 1400;
+};
+
+async function createPaymentIntent(req, res) {
+  try {
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: calculateOrderAmount(items),
+      currency: "usd",
+      automatic_payment_methods: {
+        enabled: true,
+      },
+    });
+
+    res.send({
+      clientSecret: paymentIntent.client_secret,
+    });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
+}
+
+app.post('/create-payment-intent', createPaymentIntent);
+ 
 
 const startApolloServer = async () => {
   await server.start();
@@ -48,33 +75,3 @@ const startApolloServer = async () => {
 };
 
 startApolloServer();
-
-// Will need to change the address to the deployed
-// const YOUR_DOMAIN = process.env.NODE_ENV === 'production' ? 'https://example.com' : `http://localhost:${PORT}`;
-
-// API Post request to /create-checkout-session
-// app.post('/create-checkout-session', async (req, res) => {
-//   const session = await stripe.checkout.sessions.create({
-//     ui_mode: 'embedded',
-//     line_items: [
-//       {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-//         price: '{{PRICE_ID}}',
-//         quantity: 1,
-//       },
-//     ],
-//     mode: 'payment',
-//     return_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
-//   });
-
-//   res.send({clientSecret: session.client_secret});
-// });
-
-// app.get('/session-status', async (req, res) => {
-//   const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
-
-//   res.send({
-//     status: session.status,
-//     customer_email: session.customer_details.email
-//   });
-// });

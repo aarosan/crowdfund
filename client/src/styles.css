@@ -1,8 +1,8 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -11,19 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f8f8f8;
     padding: 20px;
-}
-
-/* Header */
-h1 {
-    color: #333;
-    margin-bottom: 20px;
 }
 
 /* Checkout form */
 .donation-form {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.667);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -93,7 +86,6 @@ button:hover {
 /* Style the input when it is focused */
 .amount-input:focus {
     padding-left: 10px;
-
     color: #32325d;
 }
 

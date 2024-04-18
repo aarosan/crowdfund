@@ -3,28 +3,48 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements, useStripe, useElements, CardElement, AddressElement } from '@stripe/react-stripe-js';
 import '../styles.css';
 
+// Public Key. Return a promise that resolves to a Stripe object 
 const stripePromise = loadStripe('pk_test_51P3q5TDSMDV2zQAMhwPxiZi3Y95kMuGLNziKdtj2q7VA5SWHnmhL6lAqRExGei9fQD1x5SrOGSS11cdijlW8NPBM00Fy0leTMX');
 
+// Appearance of Stripe Elements 
 const appearance = {
     theme: 'flat',
+};
 
-  };
+
 
 const DonationForm = () => {
+
+    //Promise test
+    console.log(stripePromise);
+
+    // Retrieving the stripe object from the stripe context
     const stripe = useStripe();
+    console.log(stripe)
+
+    // Retrieving the elements object from the stripe context
     const elements = useElements();
+    console.log(elements)
+
+    // Created a state variables for the donation amount and payment messages
     const [amount, setAmount] = useState('');
     const [message, setMessage] = useState('');
 
+    // Submit Functionality
     const handleSubmit = async (event) => {
+        // Prevent default form submission behavior
         event.preventDefault();
 
+        // If there is no stripe or elements, function ends early
         if (!stripe || !elements) {
             return;
         }
 
+        // Retrieves CardElement component
         const cardElement = elements.getElement(CardElement);
 
+        // Sends a POST request to the backend server to create a payment intent with the specified amount and currency.
+        // Request sends JSON data with the amount in cents and payment method type
         const response = await fetch('http://localhost:4242/create-payment-intent', {
             method: 'POST',
             headers: {
@@ -37,14 +57,16 @@ const DonationForm = () => {
             }),
         });
 
+        // Parses the response JSON data
         const paymentIntentData = await response.json();
 
+        // If there is an error with the response, handleSubmit() will set a failure message and returns 
         if (paymentIntentData.error) {
             setMessage(`Payment failed: ${paymentIntentData.error.message}`);
             return;
         }
 
-        // Confirm the payment on the client-side
+        // Confirms the card payment using the client secret from the payment intent data and the card element
         const { error, paymentIntent } = await stripe.confirmCardPayment(
             paymentIntentData.clientSecret,
             {
@@ -54,6 +76,7 @@ const DonationForm = () => {
             }
         );
 
+        // Final message dependent on error existence
         if (error) {
             setMessage(`Payment failed: ${error.message}`);
         } else {
