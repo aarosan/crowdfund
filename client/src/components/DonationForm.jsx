@@ -45,7 +45,7 @@ const DonationForm = () => {
 
         // Sends a POST request to the backend server to create a payment intent with the specified amount and currency.
         // Request sends JSON data with the amount in cents and payment method type
-        const response = await fetch('http://localhost:4242/create-payment-intent', {
+        const response = await fetch('http://localhost:3001/create-payment-intent', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
