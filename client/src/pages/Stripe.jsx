@@ -1,4 +1,3 @@
-import React from 'react';
 import Donation from '../components/DonationForm';
 import '../styles.css'; 
 

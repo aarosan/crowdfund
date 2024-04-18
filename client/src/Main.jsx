@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <User />,
       },
       {
-        path: '/fundDetail:/id',
+        path: '/fundDetail/:id',
         element: <FundDetail />,
       },
       {
