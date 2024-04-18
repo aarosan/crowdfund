@@ -29,13 +29,6 @@ function Home() {
                     <h1 className="titleAction">Recent Calls To Action</h1>
                     <div>
                         {data.getAllFunds.map((fund) => (
-                            <div key={fund._id} className="actionCardsHome">
-                                <h3>{fund.name}</h3>
-                                <p>Description: {fund.description}</p>
-                                <p>Goal: {fund.goal}</p>
-                                <p>Creator: {fund.creator.username}</p>
-                                <Link to={`/fundDetail/${fund._id}`} onClick={() => console.log(fund)}>
-                                  <Button variant="contained">View Details</Button>
                             <div key={fund._id} className="actionCardHome">
                                 <h3 className="actionTitle">{fund.name}</h3>
                                 <p className="actionDesc">Description: {fund.description}</p>

@@ -42,10 +42,6 @@ const router = createBrowserRouter([
         element: <FundDetail />,
       },
       {
-        path: '/search',
-        element: <Search />,
-      },
-      {
         path: '/login',
         element: <Login />,
       },
