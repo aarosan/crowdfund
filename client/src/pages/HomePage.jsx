@@ -41,9 +41,6 @@ function Home() {
                                 <Link to={`/donate`}>
                                   <button className="donateBtn">Donate</button>
                                 </Link>
-                                <Link to={`/donate`}>
-                                  <Button variant="contained">Donate</Button>
-                                </Link>
                             </div>
                         ))}
                     </div>
