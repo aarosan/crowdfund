@@ -38,6 +38,9 @@ function Home() {
                                 <Link to={`/fundDetail/${fund._id}`}>
                                   <Button variant="contained">View Details</Button>
                                 </Link>
+                                <Link to={`/donate`}>
+                                  <Button variant="contained">Donate</Button>
+                                </Link>
                             </div>
                         ))}
                     </div>
