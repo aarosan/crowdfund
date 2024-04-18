@@ -3,6 +3,7 @@ const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
+const cors = require('cors');
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
@@ -14,20 +15,25 @@ const server = new ApolloServer({
   resolvers,
 });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+}));
+
+
 require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-const calculateOrderAmount = (items) => {
-  // Replace this constant with a calculation of the order's amount
-  // Calculate the order total on the server to prevent
-  // people from directly manipulating the amount on the client
-  return 1400;
-};
-
 async function createPaymentIntent(req, res) {
   try {
+    console.log( req.body );
+
+    const { amount } = req.body;
+
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: calculateOrderAmount(items),
+      amount: amount,
       currency: "usd",
       automatic_payment_methods: {
         enabled: true,
@@ -47,9 +53,6 @@ app.post('/create-payment-intent', createPaymentIntent);
 
 const startApolloServer = async () => {
   await server.start();
-
-  app.use(express.urlencoded({ extended: true }));
-  app.use(express.json());
 
   // setTimeout(()=>app.use('/graphql', expressMiddleware(server)),5000);
   app.use('/graphql', expressMiddleware(server, {

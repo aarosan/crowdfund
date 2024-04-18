@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: '/stripe',
+        path: '/donate',
         element: <Stripe />
       }
     ],

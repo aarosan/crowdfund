@@ -27,7 +27,7 @@ function Home() {
             <div className="homeCard">
                 <div className="grid">
                     <h1 className="titleAction">Recent Calls To Action</h1>
-                    <div className="actionCardHome">
+                    <div>
                         {data.getAllFunds.map((fund) => (
                             <div key={fund._id} className="actionCardsHome">
                                 <h3>{fund.name}</h3>
@@ -36,6 +36,16 @@ function Home() {
                                 <p>Creator: {fund.creator.username}</p>
                                 <Link to={`/fundDetail/${fund._id}`} onClick={() => console.log(fund)}>
                                   <Button variant="contained">View Details</Button>
+                            <div key={fund._id} className="actionCardHome">
+                                <h3 className="actionTitle">{fund.name}</h3>
+                                <p className="actionDesc">Description: {fund.description}</p>
+                                <p className="actionRaised">Goal: {fund.goal}</p>
+                                <p className="actionCreator">Creator: {fund.creator.username}</p>
+                                <Link to={`/fundDetail/${fund._id}`} style={{ textDecoration: 'none' }}>
+                                  <button className="donateBtn">View Details</button>
+                                </Link>
+                                <Link to={`/donate`}>
+                                  <button className="donateBtn">Donate</button>
                                 </Link>
                                 
                             </div>
