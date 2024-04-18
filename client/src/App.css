@@ -69,10 +69,15 @@
     margin-top: 20px;
 }
 
-.actionCardsHome {
+.actionCardHome {
+    display: block;
     border: solid 3px #0D0630;
     border-radius: 3px;
     width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .actionBox {
@@ -101,6 +106,18 @@
     font-weight: 100;
     font-style: normal;
     font-size: 25px;
+    -webkit-animation: glow 15s ease-in-out infinite alternate;
+    -moz-animation: glow 15s ease-in-out infinite alternate;
+    animation: glow 15s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #F19236, 0 0 6px #F19236, 0 0 8px #F19236, 0 0 10px #F19236, 0 0 12px #F19236;
+    }
+    to {
+      text-shadow: 0 0 1px #fff, 0 0 2px #8BBEB2, 0 0 4px #8BBEB2, 0 0 6px #8BBEB2, 0 0 8px #8BBEB2, 0 0 10px #8BBEB2, 0 0 12px #8BBEB2;
+    }
 }
 
 .actionCreator {
@@ -131,16 +148,15 @@
 }
 .donateBtn {
     display: block;
-    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
+    margin-bottom: 15px;
     padding: 10px;
     border-radius: 4px;
     background: #0D0630;
     color: whitesmoke;
     text-decoration: none;
-
 }
 
 /************************/
