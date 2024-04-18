@@ -1,5 +1,4 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import "../../src/App.css";
 import { useQuery } from '@apollo/client';
 import { GET_FUND_BY_ID } from '../utils/queries';

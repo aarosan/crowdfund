@@ -35,6 +35,9 @@ function Home() {
                                 <p>Description: {fund.description}</p>
                                 <p>Goal: {fund.goal}</p>
                                 <p>Creator: {fund.creator.username}</p>
+                                <Link to={`/fundDetail/${fund._id}`}>
+                                  <Button variant="contained">View Details</Button>
+                                </Link>
                             </div>
                         ))}
                     </div>
