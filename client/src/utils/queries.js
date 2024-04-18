@@ -33,6 +33,7 @@ export const GET_ALL_FUNDS = gql`
 query GetAllFunds {
   getAllFunds {
     creator {
+      _id
       username
     }
     description

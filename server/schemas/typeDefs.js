@@ -15,7 +15,7 @@ const typeDefs = gql`
         name: String
         description: String
         goal: Float
-        creator: User!
+        creator: User
         donations: [Donation]!
     }
 
