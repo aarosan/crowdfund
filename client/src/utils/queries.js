@@ -32,6 +32,7 @@ query Me {
 export const GET_ALL_FUNDS = gql`
 query GetAllFunds {
   getAllFunds {
+    _id
     creator {
       _id
       username

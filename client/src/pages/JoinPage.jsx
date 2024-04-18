@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import ImageUploading from 'react-images-uploading';
-
-import Button from '@mui/material/Button';
 
 import "../../src/App.css";
 import "../../src/index.css";
@@ -36,7 +34,7 @@ function Join() {
     console.log(formState);
 
     try {
-      const { data } = await signupUserFund({
+       await signupUserFund({
         variables: { ...formState,
         goal: parseFloat(formState.goal),
     },

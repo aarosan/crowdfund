@@ -7,7 +7,6 @@ import { GET_ALL_FUNDS } from '../utils/queries';
 
 function Home() {
     const { loading, error, data } = useQuery(GET_ALL_FUNDS);
-
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
@@ -35,10 +34,12 @@ function Home() {
                                 <p>Description: {fund.description}</p>
                                 <p>Goal: {fund.goal}</p>
                                 <p>Creator: {fund.creator.username}</p>
-                                <Link to={`/fundDetail/${fund._id}`}>
+                                <Link to={`/fundDetail/${fund._id}`} onClick={() => console.log(fund)}>
                                   <Button variant="contained">View Details</Button>
                                 </Link>
+                                
                             </div>
+                            
                         ))}
                     </div>
                 </div>
