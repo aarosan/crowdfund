@@ -1,6 +1,7 @@
 import { useQuery, useMutation } from '@apollo/client';
 import { GET_ME } from '../utils/queries';
 import { DELETE_FUND } from '../utils/mutations';
+import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 import '../../src/App.css'
 
@@ -40,6 +41,7 @@ function User() {
                         <h1 className="description">Call Description:{fund.description}</h1>
                         <h1 className="amountDonated">Goal:{fund.goal}</h1>
                         <button className="deleteBtn" onClick={()=> handleDelete(fund._id)}>Delete Fund</button>
+                        <Link to={`/update/${fund._id}`}><button>Update Fund</button></Link>
                     </div>
                 ))}
         </div>
