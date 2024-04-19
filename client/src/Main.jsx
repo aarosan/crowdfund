@@ -3,12 +3,9 @@ import Home from './pages/HomePage';
 import Join from './pages/JoinPage';
 import User from './pages/UserPage';
 import FundDetail from './pages/FundDetailPage';
-import Search from './pages/SearchPage';
 import ErrorPage from './pages/ErrorPage';
-import HowItWorks from './pages/HowItWorksPage';
+import Create from './pages/CreateFundPage';
 import Login from './pages/LoginPage';
-// import SingleFund from './components/SingleFund';
-// import Signup from './pages/SignUpPage';
 import App from './App';
 import Stripe from './pages/Stripe';
 
@@ -30,8 +27,8 @@ const router = createBrowserRouter([
         element: <Join />,
       },
       {
-        path: '/how-it-works',
-        element: <HowItWorks />,
+        path: '/create',
+        element: <Create />,
       },
       {
         path: '/user',

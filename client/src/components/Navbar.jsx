@@ -16,8 +16,16 @@ function Navbar () {
     <>
     <nav className="navbar">
       <ul>
-        <li><Link to="/how-it-works" style={{ textDecoration: 'none' }} >Make A Call</Link></li>
+      {Auth.loggedIn() ? (
+        <li><Link to="/create" style={{ textDecoration: 'none' }} >Make A Call</Link></li>
+      ) : (
+        <li><Link to="/login" style={{ textDecoration: 'none' }} >Make A Call</Link></li>
+      )}
+      {Auth.loggedIn() ? (
           <li><Link to="/user" style={{ textDecoration: 'none' }} >Your Calls To Action</Link></li>
+        ) : (
+        <li><Link to="/login" style={{ textDecoration: 'none' }} >Your Calls To Action</Link></li>
+      )}
         <Link to={'/'}><img className="visImg" src={ Logo } /></Link>
             <li><Link to="/join" style={{ textDecoration: 'none' }} >Join The Village</Link></li>
         {Auth.loggedIn() ? (
