@@ -13,6 +13,7 @@ query Me {
     email
     username
     funds {
+      _id
       name
       goal
       description

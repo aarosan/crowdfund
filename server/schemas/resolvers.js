@@ -88,7 +88,14 @@ const resolvers = {
         deleteFund: async (parent, {fundId}, context) => {
             if (context.user){
                 const deletedFund = await Fund.findOneAndDelete({_id: fundId});
-                return deletedFund;
+
+                const user = await User.findById(context.user._id);
+                if (user) {
+                    user.funds= user.funds.filter(fund=> fund.toString() !== fundId);
+                    await user.save();
+                }
+
+                return user;
             }
             throw AuthenticationError;
         },

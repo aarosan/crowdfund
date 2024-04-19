@@ -1,15 +1,29 @@
-import { useQuery } from '@apollo/client';
-import { GET_ME } from '../utils/queries'
+import { useQuery, useMutation } from '@apollo/client';
+import { GET_ME } from '../utils/queries';
+import { DELETE_FUND } from '../utils/mutations';
 import Auth from '../utils/auth';
-
-
 import '../../src/App.css'
 
 function User() {
     const token = Auth.getToken(); // Retrieve the token from Auth (assuming Auth handles token storage)
-    const { loading, error, data } = useQuery(GET_ME, {
+    const { loading, error, data, refetch } = useQuery(GET_ME, {
       variables: { token },
     });
+
+    const [deleteFund] = useMutation(DELETE_FUND);
+
+    const handleDelete = async (fundId) => {
+      try {
+        await deleteFund({
+          variables: { fundId },
+        });
+        
+        refetch();
+
+      } catch (error) {
+        console.error('Error deleting fund:', error);
+      }
+    };
   
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
@@ -25,6 +39,7 @@ function User() {
                         <h1 className="detailTitle">Your Calls:{fund.name}</h1>
                         <h1 className="description">Call Description:{fund.description}</h1>
                         <h1 className="amountDonated">Goal:{fund.goal}</h1>
+                        <button className="deleteBtn" onClick={()=> handleDelete(fund._id)}>Delete Fund</button>
                     </div>
                 ))}
         </div>
