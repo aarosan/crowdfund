@@ -31,9 +31,9 @@ function Home() {
                         {data.getAllFunds.map((fund) => (
                             <div key={fund._id} className="actionCardHome">
                                 <h3 className="actionTitle">{fund.name}</h3>
-                                <p className="actionDesc">Description: {fund.description}</p>
-                                <p className="actionRaised">Goal: {fund.goal}</p>
-                                <p className="actionCreator">Creator: {fund.creator.username}</p>
+                                <p className="actionDescription"><strong>Description:</strong> {fund.description}</p>
+                                <p className="actionRaised"><strong>Goal:</strong> {fund.goal}</p>
+                                <p className="actionCreator"><strong>Creator:</strong> {fund.creator.username}</p>
                                 <Link to={`/fundDetail/${fund._id}`} style={{ textDecoration: 'none' }}>
                                   <button className="donateBtn">View Details</button>
                                 </Link>
