@@ -27,7 +27,11 @@ function Navbar () {
         <li><Link to="/login" style={{ textDecoration: 'none' }} >Your Calls To Action</Link></li>
       )}
         <Link to={'/'}><img className="visImg" src={ Logo } /></Link>
+        {Auth.loggedIn() ? (
+            <li><Link to="/create" style={{ textDecoration: 'none' }} >Join The Village</Link></li>
+          ) : (
             <li><Link to="/join" style={{ textDecoration: 'none' }} >Join The Village</Link></li>
+          )}
         {Auth.loggedIn() ? (
             <li><Link to="/" onClick={handleLogout} style={{ textDecoration: 'none' }} >Logout</Link></li>
           ) : (
