@@ -71,20 +71,20 @@ function Create() {
   return (
     <>
     <h1 className="titleJoin">Make Your<br></br>Call To Action</h1>
-    <div className="joinCard">
-          <div className="addInfoCard">
+    <div className="joinCreateCard">
+          <div className="addCreateCard">
                 <h4 className="formText">Tell us about your Call To Action:</h4>
                 <form onSubmit={handleFormSubmit} className="infoBox">
                 <input
-                  className="name"
+                  className="actionT"
                   type="text"
                   placeholder="Give your call to action a title."
                   name="name"
                   value={formState.name}
                   onChange={handleCreate}
                 />
-                <input
-                  className="description"
+                <textarea
+                  className="actionDesc"
                   type="text"
                   placeholder="Describe why you are Calling for Action."
                   name="description"
@@ -92,7 +92,7 @@ function Create() {
                   onChange={handleCreate}
                 />
                 <input
-                  className="goal"
+                  className="donationAmount"
                   type="number"
                   step="any"
                   placeholder="What is your goal?"
@@ -100,8 +100,8 @@ function Create() {
                   value={formState.goal}
                   onChange={handleCreate}
                 />
-                <button className="submitBtn" type="submit">
-                  Submit
+                <button className="createCall" type="submit">
+                  Create
                 </button>
               </form>
             {error && <div className="errorBox"> {error.message}</div>}

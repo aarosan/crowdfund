@@ -100,6 +100,10 @@
     margin-top: 15px;
 }
 
+.btnCollection {
+    display: inline-flex;
+}
+
 .actionTitle {
     background: #8BBEB2;
     font-family: "Poppins", sans-serif;
@@ -161,11 +165,12 @@
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 10px 10px;
     border-radius: 4px;
     background: #0D0630;
     color: whitesmoke;
     text-decoration: none;
+    
 }
 
 /************************/
@@ -302,7 +307,7 @@
         font-weight: 100;
         font-style: normal;
         font-size: 40px;
-        margin-top: 70px;
+        margin-top: 40px;
         margin-bottom: 10px;
         color: #F19236;
     }
@@ -406,6 +411,20 @@
         box-shadow: 2px 2px #F19236;
     }
 
+    .joinCreateCard {
+        display: flex-box;
+        width: 1000px;
+        height: 600px;
+        background: whitesmoke;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
     .alreadyUser {
         text-align: center;
         text-align: center;
@@ -450,6 +469,20 @@
     .addInfoCard {
         width: 500px;
         height: 670px;
+        background: whitesmoke;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        border: solid 3px #0D0630;
+        overflow: scroll;
+        box-shadow: 2px 2px #F19236;
+    }
+
+    .addCreateCard {
+        display: block;
+        width: 500px;
+        height: 500px;
         background: whitesmoke;
         margin-top: 10px;
         margin-right: auto;
@@ -862,6 +895,10 @@
             width: 800px;
         }
 
+        .joinCreateCard {
+            width: 800px;
+        }
+
         .userCard {
             width: 800px;
         }
@@ -1015,6 +1052,17 @@
             width: 400px;
             height: 2720px;
             margin-top: 100px;
+        }
+
+        .joinCreateCard {
+            width: 400px;
+            height: 600px;
+            margin-top: 100px;
+        }
+
+        .addCreateCard {
+            width: 380px;
+            margin-top: 20px;
         }
     
         .titleJoin {

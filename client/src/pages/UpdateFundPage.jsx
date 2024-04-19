@@ -44,19 +44,19 @@ function UpdateFund () {
 
     return (
     <>
-    <div className="detailCard">
-        <h1 className="detailHeader">Fund Details</h1>
+    <div className="joinCreateCard">
+        <h1 className="titleAction">Fund Details</h1>
         <form className="updateForm" onSubmit={handleUpdate}>
-                <div className="detailTitle">
+                <div className="actionTitle">
                     <input type="text" name="name" defaultValue={fund.name} />
                 </div>
-                <div className="description">
-                    <input type="text" name="description" defaultValue={fund.description} />
+                <div className="actionDescription">
+                    <textarea type="text" name="description" defaultValue={fund.description} />
                 </div>
-                <div className="goal">
+                <div className="actionRaised">
                     <input type="number" name="goal" defaultValue={fund.goal} />
                 </div>
-                <button type="submit" className="updateBtn">Submit Updated Details</button>
+                <button type="submit" className="donateBtn">Submit Updated Details</button>
         </form>
     </div>
     </>

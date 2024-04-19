@@ -34,14 +34,16 @@ function User() {
       <div className="userCard">
           <h1 className="welcome">Welcome back, {data.me.username}</h1>
           <h1 className="userEmail">Email: {data.me.email}</h1>
-        <div className="myCalls">
+        <div className="actionCardHome">
           {data.me.funds.map((fund, index)=> (
                     <div key={index} >
-                        <h1 className="detailTitle">Your Calls:{fund.name}</h1>
-                        <h1 className="description">Call Description:{fund.description}</h1>
-                        <h1 className="amountDonated">Goal:{fund.goal}</h1>
-                        <button className="deleteBtn" onClick={()=> handleDelete(fund._id)}>Delete Fund</button>
-                        <Link to={`/update/${fund._id}`}><button>Update Fund</button></Link>
+                        <h1 className="actionTitle">{fund.name}</h1>
+                        <h1 className="actionDescription">Call Description:{fund.description}</h1>
+                        <h1 className="actionRaised">Goal:{fund.goal}</h1>
+                        <div className="btnCollection">
+                          <button className="donateBtn" onClick={()=> handleDelete(fund._id)}>Delete Fund</button>
+                          <Link to={`/update/${fund._id}`} style={{ textDecoration: 'none' }}><button className="donateBtn">Update Fund</button></Link>
+                        </div>
                     </div>
                 ))}
         </div>
