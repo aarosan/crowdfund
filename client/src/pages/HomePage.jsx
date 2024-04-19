@@ -7,6 +7,8 @@ import { GET_ALL_FUNDS } from '../utils/queries';
 
 function Home() {
     const { loading, error, data } = useQuery(GET_ALL_FUNDS);
+    const allFunds = data?.getAllFunds || []
+    console.log(allFunds);
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
@@ -28,7 +30,7 @@ function Home() {
                 <div className="grid">
                     <h1 className="titleAction">Recent Calls To Action</h1>
                     <div>
-                        {data.getAllFunds.map((fund) => (
+                        {allFunds.map((fund) => (
                             <div key={fund._id} className="actionCardHome">
                                 <h3 className="actionTitle">{fund.name}</h3>
                                 <p className="actionDescription"><strong>Description:</strong> {fund.description}</p>
