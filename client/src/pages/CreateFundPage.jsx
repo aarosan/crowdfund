@@ -11,7 +11,7 @@ function Create() {
     const { data } = useQuery(GET_ME, {
       variables: { token },
     });
-  const [submittedData, setSubmittedData] = useState([]);
+  const [setSubmittedData] = useState([]);
 
 
   const [formState, setFormState] = useState({
