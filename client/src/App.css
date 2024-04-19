@@ -386,7 +386,7 @@
     .joinCard {
         display: flex-box;
         width: 1000px;
-        height: 2720px;
+        height: 900px;
         background: whitesmoke;
         margin-top: 100px;
         margin-right: auto;
@@ -440,7 +440,7 @@
     /* STEP 1 - create username and stuff*/
     .addInfoCard {
         width: 500px;
-        height: 500px;
+        height: 670px;
         background: whitesmoke;
         margin-top: 10px;
         margin-right: auto;
@@ -472,11 +472,23 @@
         padding: 15px;
     }
 
+    .username {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
     .email {
         width: 300px;
         height: 30px;
         padding: 15px;
         margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    i {
+        color: #8BBEB2;
     }
     /* STEP 2 - add information for the call to action*/
     .addActionCard {
@@ -493,29 +505,47 @@
     }
 
     .actionDesc {
+        vertical-align: text-top;
         font-family: "Poppins", sans-serif;
         font-weight: 100;
         font-style: normal;
         font-size: 20px;
-        padding: 15px;
-        margin: 20px;
+        padding: 10px;
+        width: 430px;
+        height: 200px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .actionTitle{
+    .actionT {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
         width: 430px;
         height: 30px;
         padding: 10px;
+        margin-top: 20px;
     }
 
     .actionText{
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
         width: 430px;
         height: 200px;
     }
 
     .donationAmount {
-        width: 300px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        width: 430px;
         height: 30px;
         padding: 15px;
+        font-size: 20px;
+        margin-top: 20px;
     }
 
 
@@ -1296,5 +1326,37 @@
             font-size: 20px;
             margin-top: 15px;
             width: 300px;
+        }
+
+        .username {
+            width: 260px;
+            height: 30px;
+            padding: 15px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .email {
+            width: 260px;
+            height: 30px;
+            padding: 15px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .actionT {
+            width: 300px;
+        }
+
+        .actionDesc {
+            width: 300px;
+        }
+
+        .addInfoCard {
+            height: 670px;
+        }
+
+        .joinCard {
+            height: 850px;
         }
     }
