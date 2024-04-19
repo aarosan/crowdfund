@@ -8,6 +8,7 @@ import Create from './pages/CreateFundPage';
 import Login from './pages/LoginPage';
 import App from './App';
 import Stripe from './pages/Stripe';
+import UpdateFundPage from './pages/UpdateFundPage';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/donate',
         element: <Stripe />
+      },
+      {
+        path: '/update/:id',
+        element: <UpdateFundPage />
       }
     ],
   },
