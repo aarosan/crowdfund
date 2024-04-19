@@ -37,12 +37,10 @@ function Home() {
                                 <Link to={`/fundDetail/${fund._id}`} style={{ textDecoration: 'none' }}>
                                   <button className="donateBtn">View Details</button>
                                 </Link>
-                                <Link to={`/donate`}>
+                                <Link to={`/donate`} style={{ textDecoration: 'none' }}>
                                   <button className="donateBtn">Donate</button>
-                                </Link>
-                                
-                            </div>
-                            
+                                </Link> 
+                            </div> 
                         ))}
                     </div>
                 </div>
