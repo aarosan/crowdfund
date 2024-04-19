@@ -59,7 +59,7 @@ function Join() {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit} className="infoBox">
-                <i class="fa-solid fa-user"></i><input
+                <i className="fa-solid fa-user"></i><input
                   className="username"
                   type="text"
                   placeholder="Username"
@@ -67,7 +67,7 @@ function Join() {
                   value={formState.username}
                   onChange={handleSignup}
                 /><br></br>
-                <i class="fa-solid fa-envelope"></i><input
+                <i className="fa-solid fa-envelope"></i><input
                   className="email"
                   type="email"
                   placeholder="Email"
@@ -75,7 +75,7 @@ function Join() {
                   value={formState.email}
                   onChange={handleSignup}
                 /><br></br>
-                <i class="fa-solid fa-lock"></i><input
+                <i className="fa-solid fa-lock"></i><input
                   className="email"
                   type="password"
                   placeholder="Password(8 characters minimum)"
