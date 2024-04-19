@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import ImageUploading from 'react-images-uploading';
-
 import "../../src/App.css";
-import "../../src/index.css";
-
 import { useMutation } from "@apollo/client";
 import { SIGNUP_USER_FUND } from "../utils/mutations";
 
