@@ -12,8 +12,6 @@ const appearance = {
     theme: 'flat',
 };
 
-const navigate = useNavigate();
-
 const DonationForm = () => {
 
     //Promise test
@@ -30,6 +28,8 @@ const DonationForm = () => {
     // Created a state variables for the donation amount and payment messages
     const [amount, setAmount] = useState('');
     const [message, setMessage] = useState('');
+
+    const navigate = useNavigate();
 
     // Submit Functionality
     const handleSubmit = async (event) => {
@@ -83,7 +83,7 @@ const DonationForm = () => {
             setMessage(`Payment failed: ${error.message}`);
         } else {
             setMessage('Payment successful!');
-            navigate('/')
+            navigate('/');
         }
     };
 
