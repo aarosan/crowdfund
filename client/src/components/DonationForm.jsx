@@ -12,7 +12,7 @@ const appearance = {
     theme: 'flat',
 };
 
-
+const navigate = useNavigate();
 
 const DonationForm = () => {
 
