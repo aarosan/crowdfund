@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, useStripe, useElements, CardElement, AddressElement } from '@stripe/react-stripe-js';
 import '../styles.css';
@@ -45,7 +46,8 @@ const DonationForm = () => {
 
         // Sends a POST request to the backend server to create a payment intent with the specified amount and currency.
         // Request sends JSON data with the amount in cents and payment method type
-        const response = await fetch('http://localhost:3001/create-payment-intent', {
+        const response = await fetch('https://takes-a-village.onrender.com/create-payment-intent', {
+
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,6 +83,7 @@ const DonationForm = () => {
             setMessage(`Payment failed: ${error.message}`);
         } else {
             setMessage('Payment successful!');
+            navigate('/')
         }
     };
 
